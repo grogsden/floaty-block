@@ -1,7 +1,13 @@
 import React from 'react';
 import { View } from 'react-native';
 
-export default function Obstacles({color, obstacalesLeft, obstacleWidth, obstacleHeight, gap}) {
+export default function Obstacles({color, 
+    obstacalesLeft, 
+    obstacleWidth, 
+    obstacleHeight, 
+    gap, 
+    randomBottom
+}) {
    
 
     return(
@@ -14,7 +20,7 @@ export default function Obstacles({color, obstacalesLeft, obstacleWidth, obstacl
             width: obstacleWidth,
             height: obstacleHeight,
             left: obstacalesLeft,
-            bottom: 0 + obstacleHeight + gap,
+            bottom: randomBottom + obstacleHeight + gap,
         }} />
         <View style={{
             position: 'absolute',
@@ -24,7 +30,7 @@ export default function Obstacles({color, obstacalesLeft, obstacleWidth, obstacl
             width: obstacleWidth,
             height: obstacleHeight,
             left: obstacalesLeft,
-            bottom: 0,
+            bottom: randomBottom,
         }} />
         </>
 
