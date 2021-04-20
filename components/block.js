@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 
 
 
@@ -15,8 +15,7 @@ const blockHeight = 60;
             height: blockHeight,
             left: blockLeft - (blockWidth/2),
             bottom: blockBottom - (blockHeight/2)
-        }}>
-        </View>
+        }} />
     )
 }
 
